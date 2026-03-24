@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BI Productivity Clock</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="clock-container">
+        
+        <div id="display-time">00:00:00</div>
+        
+        <div id="status">Ready to Start?</div>
+        
+        <div class="controls">
+            <button onclick="logActivity('Study')">Start Study</button>
+            <button onclick="logActivity('Break')">Take a Break</button>
+        </div>
+
+        <hr style="margin: 20px 0; border: 0; border-top: 1px solid rgba(255,255,255,0.1);">
+
+        <div class="bi-actions">
+            <button id="download-btn" onclick="downloadCSV()" style="background: #28a745; width: 100%;">
+                Download Data for Power BI
+            </button>
+        </div>
+
+        <div class="reset-section" style="margin-top: 10px;">
+            <button onclick="resetData()" style="background: #dc3545; width: 100%;">
+                Reset All Data
+            </button>
+        </div>
+
+        <div id="log-list">
+            <h3>Activity Log (Raw Data):</h3>
+            <ul id="activities"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
