@@ -26,6 +26,19 @@ body {
     margin-bottom: 20px;
 }
 
+/* Status Text Styling: 
+Controls the spacing between the message and the buttons 
+*/
+#status {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 10px;    /* Space between clock and status */
+    margin-bottom: 20px; /* Space between status and buttons (Increase this for more gap) */
+    font-weight: 300;
+    letter-spacing: 1px;
+    display: block;      /* Ensures the margin is applied correctly as a block element */
+}
+
 button {
     background: white;
     color: #2c5364;
